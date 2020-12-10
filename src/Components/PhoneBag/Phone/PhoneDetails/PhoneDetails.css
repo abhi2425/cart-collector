@@ -1,0 +1,52 @@
+.phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone__image {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  margin-right: 40px;
+}
+.phone__image--style {
+  width: 100%;
+}
+
+.phone__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.phone__details--name {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #312f2f;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+.phone__details--price {
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  color: #5e5e5e;
+  opacity: 0.8;
+  margin: 1px;
+}
+.phone__details--remove {
+  font-size: 18px;
+  font-family: monospace;
+  color: #4876ff;
+  font-weight: 100;
+  background-color: white;
+  border: none;
+  margin-top: 5px;
+  letter-spacing: 3px;
+  transition: all 0.6s;
+  outline: none;
+}
+.phone__details--remove:hover {
+  color: #63b8ff;
+}

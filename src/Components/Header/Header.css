@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #1e90ff;
+}
+
+.header__heading {
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: 1.5px;
+}
+.header__cart {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.header__cart--image {
+  width: 100%;
+}
+.totalCount--container {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  border-radius: 100%;
+  width: 1.85rem;
+  height: 1.85rem;
+}
+.totalCount {
+  font-size: 22px;
+  color: gray;
+  margin-left: 6px;
+}

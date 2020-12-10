@@ -1,0 +1,19 @@
+.btn {
+  background-color: white;
+  color: #3264fa;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  padding: 5px 0.2px;
+  outline: none;
+}
+.btn:hover {
+  color: #63b8ff;
+}
+.counter {
+  font-size: 20px;
+  color: #7d7d7d;
+  font-family: monospace;
+  outline: none;
+  text-align: center;
+}
