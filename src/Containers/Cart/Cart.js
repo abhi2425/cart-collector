@@ -92,7 +92,7 @@ class Cart extends Component {
     });
   };
   removePhoneFromCartHandler = (id) => {
-    const phonesUpdated = this.state.phones; //Copying Object
+    let phonesUpdated = this.state.phones; //Copying Object
     const index = phonesUpdated.findIndex((item) => item.id === id);
 
     let updatedTotalCount = this.state.totalCount;
@@ -102,7 +102,8 @@ class Cart extends Component {
     updatedTotalPrice -=
       phonesUpdated[index].price * phonesUpdated[index].phoneCount;
 
-    phonesUpdated.splice(index, 1);
+    // phonesUpdated.splice(index, 1); //Both Works Fine!!
+    phonesUpdated = phonesUpdated.filter((_, id) => index !== id);
 
     this.setState({
       phones: [...phonesUpdated],

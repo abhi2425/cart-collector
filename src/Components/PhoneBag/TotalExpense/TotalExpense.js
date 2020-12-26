@@ -8,7 +8,7 @@ const totalExpense = (props) => (
       <div>${props.totalPrice}</div>
     </div>
     <button className="clearChart" onClick={props.clearCart}>
-      Clear Chart
+      Clear Cart
     </button>
   </footer>
 );
